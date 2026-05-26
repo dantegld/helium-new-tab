@@ -1,8 +1,11 @@
 body {
     background-color: rgb(58, 60, 60);
-    height: 100vh;
-    overflow: hidden;
+    color: rgb(217, 217, 216);
+    /* font */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: -0.01em;
 }
 
 #day-progress {
