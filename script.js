@@ -21,13 +21,11 @@
 
         setTimeout(update, 50)
 
-        // Toggle ARIA on hover for accessibility
         if (bar && tooltip) {
             bar.addEventListener('mouseenter', function(){ tooltip.setAttribute('aria-hidden', 'false'); });
             bar.addEventListener('mouseleave', function(){ tooltip.setAttribute('aria-hidden', 'true'); });
         }
 
-        // Align updates to the next minute, then update every minute
         const now = new Date();
         const msToNextMinute = (60 - now.getSeconds()) * 1000 - now.getMilliseconds();
         setTimeout(function(){
